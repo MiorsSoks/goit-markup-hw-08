@@ -1,5 +1,6 @@
 .projects {
-  @extend %section-padding
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .projects-list {
     display: flex;

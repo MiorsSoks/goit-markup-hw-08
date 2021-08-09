@@ -21,3 +21,10 @@
     font-weight: 700;
     margin-bottom: 20px;
   }
+  @media screen and (max-width: 768px) {
+    .logo_black {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    
+  }
