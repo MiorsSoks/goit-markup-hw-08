@@ -435,6 +435,7 @@ body {
   border-radius: 4px;
   height: 40px;
   display: block;
+  padding-left: 42px;
 }
 
 @media screen and (max-width: 479px) {
