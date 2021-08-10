@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-btn__icon-burger">
             <use href="./images/symbol-defs.svg#icon-burger"></use>
           </svg>
@@ -64,13 +64,33 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu">
+
+      <!--Мобильное меню-->
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__close-btn">
+          <button class="close-button mobile-menu__close-button" data-menu-close>
           <svg class="mobile-menu__close-icon" width="16" height="12">
             <use href="./images/symbol-defs.svg#close-black"></use>
           </svg>
-        </button></div>
+        </button>
+        <ul class="list">
+          <li><a class="link mobile-menu-link current-mobile" href="./index.html">Студия</a></li>
+          <li><a class="link mobile-menu-link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link mobile-menu-link" href="">Контакты</a></li>
+        </ul>
+
+        <ul class="list">
+          <li></li>
+          <li></li>
+      </ul>
+
+        <ul class="list">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -612,7 +632,7 @@
     </footer>
 
 <!-- Модальное окно -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn-icon">
@@ -703,5 +723,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
