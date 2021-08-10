@@ -25,11 +25,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    max-width: 450px;
+    height: 120px;
   }
 
   .qualities-icon {
-    width: 70px;
-    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
     background-position: 50% 50%;
   }
 
@@ -41,8 +43,8 @@
   }
 }
 
-// 0 - 768
-@media screen and (max-width: 768px) {
+// 0 - 767
+@media screen and (max-width: 767px) {
   .qualities-list-subtitle {
     text-align: center;
   }
@@ -58,8 +60,8 @@
 }
 }
 
-// 768 - 1200
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+// 768 - 1199
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .qualities-list {
     display: flex;
     flex-wrap: wrap;
