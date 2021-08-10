@@ -64,3 +64,55 @@
 .link.current-mobile {
     color: var(--accent-color);
 }
+.mobile-menu-tel {
+display: block;
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+
+color: var(--accent-color);
+padding-top: 302px;
+padding-left: 40px;
+}
+.mobile-menu-mail {
+display: block;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+color: var(--primary-text-grey-color);
+padding-left: 40px;
+padding-top: 32px;
+}
+
+.mobile-menu-sotial-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 40px;
+  padding-top: 64px;
+
+
+.mobile-menu-sotial-item {
+  display: flex;
+  margin-left: -10px;
+  &:not(:last-child):after {
+    content: '';
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+}
+}
+
+
+.mobile-menu-sotial {
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+}
+}
