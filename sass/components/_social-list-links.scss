@@ -1,6 +1,6 @@
 .team-background-icon {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 44px;
   height: 44px;
@@ -11,6 +11,9 @@
   background-color: var(--accent-color);
 }
 }
+.icon-item:not(:last-child) {
+    margin-right: 10px;
+  }
 .team-icon {
   width: 20px;
   height: 20px;
@@ -23,7 +26,6 @@
 }
   .team-icon-list {
     display: flex;
-    justify-content: space-between;
     margin-top: 16px;
   }
 
@@ -51,7 +53,6 @@
   .join-icon-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     
     :not(:last-child) {
     margin-right: 10px;

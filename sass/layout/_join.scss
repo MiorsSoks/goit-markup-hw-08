@@ -1,3 +1,13 @@
+.right-address-container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
 .join-text {
     color: var(--primary-text-white-color);
     font-family: var(--title-font-family);
@@ -7,4 +17,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
+  

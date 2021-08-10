@@ -1,25 +1,52 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
+  @media screen and (min-width: 280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 }
 .team-list {
-    display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 120px) / 4);
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: -15px;
+    }
   }
+
   .team-item {
     background-color: var(--primary-text-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    margin-top: 30px;
-    margin-left: 30px;
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    & + & {
+      margin-top: 30px;
+    }
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
   
   .team-subtitle-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 30px;
